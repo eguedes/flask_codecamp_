@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo Flask - Learn More</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Chamada apenas para testes de layout -->
+    <link href="/app/static/styles/style_p.css" rel="stylesheet">
+
+    <!-- Chamada para produção -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style_p.css') }}">
+
+</head>
+<body class="bg-dark-subtle coluna_central">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <nav class="navbar navbar-expand-lg bg-dark-subtle">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Estudo Flask</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="{{url_for('homepage')}}">Home</a>
+                <a class="nav-link disabled" href="{{url_for('about')}}">Learn More</a>
+                <a class="nav-link" href="{{url_for('contact')}}">Cotact</a>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container bg-secondary-subtle text-center preenchimento_vertical px-4 py-5">
+        <h1>Estudo Flask</h1>
+        
+        <hr>
+        <p class="justificar_texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis iaculis augue non rhoncus. Nulla vel sem iaculis, scelerisque ante in, euismod ex. Aliquam et ipsum risus. Ut accumsan accumsan enim ac blandit. Ut maximus turpis risus, at iaculis libero sollicitudin at. Vestibulum commodo est nec mi mattis luctus. Curabitur ut orci lectus. Nam porta ex non neque luctus, id sagittis justo maximus. Vivamus a hendrerit nibh, vel rhoncus sapien. Fusce lacus felis, mattis vitae aliquet sed, mollis ullamcorper nisi. Duis ullamcorper orci ut cursus efficitur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        
+        <p class="justificar_texto">Nullam sodales arcu ut laoreet facilisis. Curabitur quam turpis, faucibus et vulputate at, euismod ac quam. Donec vel consectetur nisl. Donec sed dolor congue, iaculis odio sed, tincidunt massa. Duis augue lacus, maximus et molestie quis, varius eget elit. Aenean id egestas urna, rhoncus ultrices urna. Phasellus et ultricies magna. Duis ex nisi, pulvinar ut metus commodo, tincidunt blandit quam. Morbi nec risus ante. Fusce consectetur, velit vitae gravida sollicitudin, nibh libero varius mauris, ac tristique est purus non purus. Sed sed est viverra, interdum turpis nec, lacinia ex. Pellentesque pretium, ante at euismod pulvinar, magna velit pulvinar turpis, quis posuere nulla arcu ac diam. Nunc congue ultrices sem, sed lacinia elit laoreet vitae. Donec convallis tincidunt arcu, sit amet iaculis ex eleifend at. Suspendisse vitae facilisis mi. </p>
+
+        <p class="justificar_texto">Vivamus sodales orci eu nulla eleifend, eget elementum nisi imperdiet. Vestibulum ultrices, urna sed maximus condimentum, lectus nunc ultrices libero, at sollicitudin nulla est ut orci. Maecenas imperdiet leo eu erat placerat tempor. Morbi et pellentesque ex. Aenean suscipit massa ac finibus sagittis. Sed congue semper tortor. Quisque auctor ullamcorper nulla, sit amet elementum tellus interdum non.</p>
+
+        <p class="justificar_texto">Vivamus vel porttitor augue. Integer elementum elementum sem eget porta. Curabitur massa massa, facilisis eu neque ut, maximus feugiat lorem. Quisque id ligula congue, pretium sem laoreet, dapibus massa. Maecenas posuere mollis ultricies. Curabitur fringilla eu ligula vitae accumsan. Nullam ac malesuada dui, sit amet tempus justo. Nam euismod tincidunt sem, at sollicitudin nulla. Maecenas in mi ligula. In dictum magna nisl, quis ornare diam porttitor ut. Aliquam erat volutpat. Pellentesque sed ultricies est.</p>
+
+        <p class="justificar_texto">Praesent a lacinia massa, a vehicula quam. Nunc tempus urna odio, vitae accumsan sem finibus vel. Vivamus porttitor gravida ex et feugiat. Phasellus nec magna a mauris mattis dictum. Phasellus quis felis turpis. Nulla non enim ut urna dictum convallis et suscipit odio. Suspendisse ullamcorper, libero vel faucibus dignissim, dolor enim placerat ex, ut convallis felis orci eu felis. Aliquam feugiat nunc eget arcu elementum, ac ornare lectus dignissim. Nam vitae ex iaculis, lobortis leo quis, dapibus diam. Mauris aliquet hendrerit consequat. Proin nec lorem pellentesque, aliquam ante sed, consequat erat. Vestibulum lacus velit, tempus in urna vel, facilisis suscipit neque. Duis vitae viverra risus. Quisque velit massa, iaculis non neque in, finibus semper est. Ut dui leo, ultricies quis nibh eget, pretium accumsan nisl. Donec id bibendum lorem, ut dictum eros. </p>
+
+    </div>
+</body>
+</html>

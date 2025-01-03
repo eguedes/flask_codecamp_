@@ -1,0 +1,20 @@
+.preenchimento_vertical {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.largura_botoes_cover {
+    width: 200px;
+}
+
+.coluna_central {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.justificar_texto {
+    text-align: justify;
+}

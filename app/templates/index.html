@@ -5,15 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudo Flask - Camp Code</title>
-</head>
-<body>
-    <div>
-        <h3>Estudo Flask</h3>
-        <h5>@campcodebrasil</h5>
-    </div>
 
-    <div>
-        <p>Bem vindos a aula de Flask!</p>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Chamada apenas para testes de layout -->
+    <link href="/app/static/styles/style_p.css" rel="stylesheet">
+
+    <!-- Chamada para produção -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style_p.css') }}">
+
+</head>
+<body class="bg-dark-subtle">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <div class="container-fluid bg-secondary-subtle text-center preenchimento_vertical">
+        <br>
+        <h1>Welcome to Our Landing Page</h1>
+        <p>This is a simple and clean landing page template using Bootstrap.</p>
+
+        <!--
+        <div class="d-grid gap-100 justify-content-sm-center">
+            <div class="row justify-content-evenly">
+                <div class="col">
+                    <a href="{{url_for('about')}}" class="btn btn-lg btn-secondary text-nowrap largura" role="button">Learn More</a>
+                </div>
+                <div class="col">
+                    <a href="{{url_for('contact')}}"  class="btn btn-lg btn-secondary largura" role="button">Contact</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <br> -->
+        <div class="btn-group btn-group-lg gap-1" role="group" aria-label="Large button group">
+            <a href="{{url_for('about')}}" class="btn btn-lg btn-secondary text-nowrap largura_botoes_cover" role="button">Learn More</a>
+            <a href="{{url_for('contact')}}"  class="btn btn-lg btn-secondary largura_botoes_cover" role="button">Contact</a>
+        </div>
+
+        <br>
     </div>
+    
+    <!-- <div>
+        <p>Bem vindo, {{context.usuario}} a aula de Flask!</p>
+        <p><b>Idade:</b> {{context.idade}}</p>
+
+        <a href="{{url_for('novapag')}}">Ir para outra página</a>
+    </div> -->
 </body>
 </html>
